@@ -6,7 +6,8 @@ set(SRCS main.cpp
 
 add_executable(graver-creator ${SRCS})
 
-target_link_libraries(graver-creator PRIVATE Qt6::Widgets)
+target_link_libraries(graver-creator PRIVATE Qt6::Widgets logutil)
+#target_link_libraries(graver-creator PRIVATE Qt6::Widgets)
 
 set_target_properties(graver-creator PROPERTIES
     WIN32_EXECUTABLE TRUE

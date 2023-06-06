@@ -13,6 +13,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 qt_standard_project_setup()
 
+include_directories(${PROJECT_SOURCE_DIR}/src/third)
+
 add_subdirectory(src)
 
 
